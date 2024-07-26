@@ -11,7 +11,7 @@ git init
 git init -b main
 
 # adding the files for staging area
-git add (file name along with format)
+git add git.txt
 
 # to look into all our commits
 git log
@@ -29,6 +29,28 @@ git diff
 git diff --staged
 
 # removing the file from git repositories
-git rm --cached (file name)
+git rm --cached git.txt
+
+# adding all the files to the git
+git add .
+
+# creating a main branch
+git branch - main
+
+# creating a README.md file
+echo "# git - course" >> README.md
+
+# using ssh for setting up your device to push the repositories to github
+ssh-keygen -o
+
+# connecting the repositories that is in github
+git remote add origin (ssh data like https of repositories)
+
+# pushing from local to remote
+git push -u origin main
+
+
+ 
+
 
 
