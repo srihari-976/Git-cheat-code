@@ -80,6 +80,9 @@ git switch -
 git switch main
 git merge master
 
+# pushing forcefully
+git push -f origin main
+
 
 
 
