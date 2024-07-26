@@ -49,6 +49,12 @@ git remote add origin (ssh data like https of repositories)
 # pushing from local to remote
 git push -u origin main
 
+# find out the number of tags i have for this project
+git tag -l
+
+# creating a new tag 
+git tag -a v1.0 -m "1st tag"
+
 
  
 
