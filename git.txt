@@ -55,6 +55,32 @@ git tag -l
 # creating a new tag 
 git tag -a v1.0 -m "1st tag"
 
+# pushing the tag 
+git push origin v1.0
+
+# to see particular tag
+git show v1.0
+
+# seeing branches
+git branch -a
+
+# switching the branch
+git switch main
+
+# creating a new branch
+git switch -c master
+
+# deleting the branch
+git branch -d master
+
+# switching to previous branch
+git switch -
+
+
+
+
+
+
 
  
 
