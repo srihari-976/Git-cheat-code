@@ -1,167 +1,93 @@
-
-# Git Course
-
-This guide provides an overview of common Git commands and their usage.
-
-## Git Basics
-
-### Checking the Git Version
-```sh
+# to know the version of git
 git --version
-```
 
-### Checking the Status of Your Repository
-```sh
+# to know status
 git status
-```
 
-### Initializing a Git Repository
-To initialize a repository with the default branch named `master`:
-```sh
+# to create a git (master)
 git init
-```
-To initialize a repository with a branch named `main`:
-```sh
+
+# to create a git
 git init -b main
-```
 
-### Staging and Committing Changes
-To add a specific file to the staging area:
-```sh
+# adding the files for staging area
 git add git.txt
-```
 
-To add all files to the staging area:
-```sh
-git add .
-```
-
-To commit the staged files with a message:
-```sh
-git commit -m "My first commit"
-```
-
-To commit all changes (including unstaged) with a message:
-```sh
-git commit -a -m "My first commit"
-```
-
-### Viewing Commit History
-```sh
+# to look into all our commits
 git log
-```
 
-### Viewing Changes
-To see what changes have been made but not yet staged:
-```sh
+# commit the file should be done with message / issue
+git commit -m "My first commit"
+
+# committing the file without adding it to staging area
+git commit -a -m "My first commit"
+
+# if you want to what exactly you have made changes in file
 git diff
-```
 
-To see changes in the staged area:
-```sh
+# if u want to know the changes in staged area
 git diff --staged
-```
 
-### Removing Files
-To remove a file from the repository but keep it in the working directory:
-```sh
+# removing the file from git repositories
 git rm --cached git.txt
-```
 
-## Branching and Merging
+# adding all the files to the git
+git add .
 
-### Creating and Managing Branches
-To create a new branch named `main`:
-```sh
+# creating a main branch
 git branch - main
-```
 
-To see all branches:
-```sh
+# creating a README.md file
+echo "# git - course" >> README.md
+
+# using ssh for setting up your device to push the repositories to github
+ssh-keygen -o
+
+# connecting the repositories that is in github
+git remote add origin (ssh data like https of repositories)
+
+# pushing from local to remote
+git push -u origin main
+
+# find out the number of tags i have for this project
+git tag -l
+
+# creating a new tag 
+git tag -a v1.0 -m "1st tag"
+
+# pushing the tag 
+git push origin v1.0
+
+# to see particular tag
+git show v1.0
+
+# seeing branches
 git branch -a
-```
 
-To switch to a specific branch:
-```sh
+# switching the branch
 git switch main
-```
 
-To create and switch to a new branch named `master`:
-```sh
+# creating a new branch
 git switch -c master
-```
 
-To switch to the previous branch:
-```sh
-git switch -
-```
-
-To delete a branch named `master`:
-```sh
+# deleting the branch
 git branch -d master
-```
 
-### Merging Branches
-To merge changes from the `master` branch into the `main` branch:
-```sh
+# switching to previous branch
+git switch -
+
+# merging of data from 2 branches
 git switch main
 git merge master
-```
 
-## Working with Remote Repositories
-
-### Setting Up SSH
-To generate an SSH key:
-```sh
-ssh-keygen -o
-```
-
-### Connecting to a Remote Repository
-To add a remote repository:
-```sh
-git remote add origin <repository_url>
-```
-
-### Pushing Changes
-To push changes from the local repository to the remote repository:
-```sh
-git push -u origin main
-```
-
-To push changes forcefully:
-```sh
+# pushing forcefully
 git push -f origin main
-```
 
-## Tags
 
-### Listing Tags
-To find out the number of tags for the project:
-```sh
-git tag -l
-```
 
-### Creating and Pushing Tags
-To create a new tag:
-```sh
-git tag -a v1.0 -m "1st tag"
-```
 
-To push a tag to the remote repository:
-```sh
-git push origin v1.0
-```
 
-### Viewing a Tag
-To see a particular tag:
-```sh
-git show v1.0
-```
+ 
 
-## Other Commands
 
-### Creating a README.md File
-To create a README.md file:
-```sh
-echo "# git - course" >> README.md
-```
+
