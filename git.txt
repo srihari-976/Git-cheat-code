@@ -25,4 +25,10 @@ git commit -a -m "My first commit"
 # if you want to what exactly you have made changes in file
 git diff
 
+# if u want to know the changes in staged area
+git diff --staged
+
+# removing the file from git repositories
+git rm --cached (file name)
+
 
