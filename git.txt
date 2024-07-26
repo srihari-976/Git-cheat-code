@@ -1,0 +1,16 @@
+# to know the version of git
+git --version
+
+# to know status
+git status
+
+# to create a git (master)
+git init
+
+# to create a git
+git init -b main
+
+# adding the files for staging area
+
+
+
