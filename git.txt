@@ -11,6 +11,12 @@ git init
 git init -b main
 
 # adding the files for staging area
+git add (file name along with format)
 
+# to look into all our commits
+git log
+
+# commit the file should be done with message / issue
+git commit -m "My first commit"
 
 
