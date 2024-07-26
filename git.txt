@@ -76,7 +76,9 @@ git branch -d master
 # switching to previous branch
 git switch -
 
-
+# merging of data from 2 branches
+git switch main
+git merge master
 
 
 
